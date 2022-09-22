@@ -4,5 +4,5 @@ if __name__ == "__main__":
     size = len(argv)
     result = 0
     for add in range(1, size):
-        result += int(argv[add])
+        result = result int(argv[add])
     print(total)
