@@ -10,5 +10,4 @@ if __name__ == "__main__":
     elif size > 2:
         print("{} arguments:".format(size - 1))
     for count in range(1, size):
-        print("{}: {}".format(count, argv[count]))
-    
+        print("{}: {}".format(count, argv[count]))    
