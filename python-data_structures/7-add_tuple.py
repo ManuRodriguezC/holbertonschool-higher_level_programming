@@ -2,8 +2,8 @@
 def add_tuple(tuple_a=(), tuple_b=()):
     a = list(tuple_a)
     b = list(tuple_b)
-    for one in range(len(a) - 1):
-        for two in range(len(b) - 1):
+    for one in range(len(a)):
+        for two in range(len(b)):
             a[one] + 0
             b[two] + 0
             if one == two:
