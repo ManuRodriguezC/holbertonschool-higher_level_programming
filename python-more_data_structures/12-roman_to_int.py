@@ -14,8 +14,6 @@ def roman_to_int(roman_string):
     value = 0
     for x in range(len(roman_string)):
         if x > 0 and dict_rom[roman_string[x]] > dict_rom[roman_string[x - 1]]:
-            value += dict_rom[roman_string[x]] - \
-                dict_rom[roman_string[x - 1]] * 2
-        else:
-            value += dict_rom[roman_string[x]]
+            value -= dict_rom[roman_string[x - 1]] * 2
+        value += dict_rom[roman_string[x]]
     return value
