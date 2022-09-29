@@ -4,7 +4,8 @@ def list_division(my_list_1, my_list_2, list_length):
         new = my_lits_1.copy()
     else:
         new = my_list_2.copy()
-    for pos in range(list_length):
+    pos = 0
+    while pos < list_length:
         try:
             new[pos] = my_list_1[pos] / my_list_2[pos]
         except IndexError:
@@ -16,4 +17,6 @@ def list_division(my_list_1, my_list_2, list_length):
         except TypeError:
             print("wrong type")
             new[pos] = 0
+        finally:
+            pos += 1
     return new
