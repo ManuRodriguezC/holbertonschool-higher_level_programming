@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""
-This programe create the square class
-wich received the size of the square
-"""
+"""This programe create the square class wich received the size of the square"""
 
 
 class Square:
+    """Square class"""
     def __init__(self, size=0):
         """Square class, this class conteint the attributes and methods"""
         if type(size) != int:
