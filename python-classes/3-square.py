@@ -3,6 +3,7 @@
 
 
 class Square:
+    """This class contain one attribute"""
     def __init__(self, size=0):
         """
         Chack if the size is a integer type, if size is
