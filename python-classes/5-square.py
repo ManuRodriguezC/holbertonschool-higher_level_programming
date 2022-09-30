@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""This programe create the square class wich received the size of the square"""
+"""
+This programe create the square class wich received
+the size of the square
+"""
 
 
 class Square:
