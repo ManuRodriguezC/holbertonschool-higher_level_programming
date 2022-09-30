@@ -15,6 +15,7 @@ class Square:
         else:
             self.__size = size
     """This method calculate the square are if size is integer"""
+    
     def area(self):
         a = self.__size * self.__size
         return a
