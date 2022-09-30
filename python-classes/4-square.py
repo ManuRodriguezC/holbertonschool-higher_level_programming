@@ -9,17 +9,17 @@ class Square:
     """Square class, this class conteint the attributes and methods"""
     def __init__(self, size=0):
         if type(size) != int:
-            raise TypeError("size must be integer")
+            raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-    
+
     def area(self):
         """This methond calculate the area of the square"""
         a = self.__size * self.__size
         return a
-    
+
     @property
     def size(self):
         """This method return the value of the size of the square"""
@@ -29,9 +29,8 @@ class Square:
     def size(self, value):
         """This method modify the size of the square"""
         if type(value) != int:
-            raise TypeError("size must be integer")
+            raise TypeError("size must be an integer")
         elif value < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
-
