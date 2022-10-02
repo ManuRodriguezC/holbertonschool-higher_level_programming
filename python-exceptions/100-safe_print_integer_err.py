@@ -7,5 +7,8 @@ def safe_print_integer_err(value):
             print("{:d}".format(value))
             return True
     except:
-        sys.stderr.write("Exception: Unknown format code 'd' for object of type 'str'\n")
+        if value + "":
+            sys.stderr.write("Exception: Unknown format code 'd' for object of type 'str'\n")
+        elif value + 1.1111:
+            sys.stderr.write("Exception: Unknown format code 'd' for object of type 'float'\n")
         return False
