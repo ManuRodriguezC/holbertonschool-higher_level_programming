@@ -1,0 +1,29 @@
+The ''add_integer'' module
+==========================
+
+Using ''add''
+-------------
+
+This is an add_integer text file in reStructuredText format. Fitst import
+''add'' from the ''add_integer'' module:
+
+    >>> from example import add
+
+Now use it:
+
+    >>>add(1, 2)
+    3
+    >>>add(100, -2)
+    98
+    >>>add(2)
+    100
+    >>>add(100.3, -2)
+    98
+    >>>add(4, "School")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+    >>>add(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
