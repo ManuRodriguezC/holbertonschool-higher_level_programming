@@ -20,7 +20,8 @@ def matrix_divided(matrix, div):
     for i in range(len(matrix)):
         for j in range(len(matrix[i])):
             if type(matrix[i][j]) != int and type(matrix[i][j]) != float:
-                raise TypeError("matrix must be a matrix (lists of list) of integers/floats")
+                raise TypeError\
+                    ("matrix must be a matrix (list of lists) of integers/floats")
             new.append(round(matrix[i][j] / div, 2))
         new_list.append(new)
         new = []
