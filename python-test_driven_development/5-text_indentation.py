@@ -8,7 +8,7 @@ def text_indentation(text):
 
     for i in range(len(text)):
         if text[i] == "." or text[i] == "?":
-            print()
+            print(text[i])
             print()
         if text[i] != "." and text[i] != "?":
             print(text[i], end="")
