@@ -24,16 +24,15 @@ def matrix_divided(matrix, div):
     for i in range(len(matrix)):
         if type(matrix[i]) != list:
             raise TypeError(not_list)
-        if len(matrix[i]) != len(matrix[0]):
+        if len(matrix[i] != len(matrix[0])):
             raise TypeError(size)
         for j in range(len(matrix[i])):
-            if not isinstance(matrix[i][j](int, float)):
+            if type(matrix[i][j]) != int and type(matrix[i][j]) != float:
                 raise TypeError(not_list)
             new.append(round(matrix[i][j] / div, 2))
         new_list.append(new)
         new = []
     return new_list
-
 """check doctest to module"""
 if __name__ == "__main__":
     import doctest
