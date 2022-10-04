@@ -8,13 +8,11 @@ def say_my_name(first_name, last_name=""):
     if first and las name is string print with:
     My name is {first_name} {last_name}
     """
-    error_first = "first_name must be a string"
-    error_last = "last_name must be a string"
     if type(first_name) != str:
-        raise TypeError(error_first)
+        raise TypeError("first_name must be a string")
 
     if type(last_name) != str:
-        raise TypeError(error_last)
+        raise TypeError("last_name must be a string")
 
     print("My name is {} {}".format(first_name, last_name))
 
