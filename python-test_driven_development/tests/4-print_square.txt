@@ -49,6 +49,7 @@ Now use it:
     Traceback (most recent call last):
     ...
     TypeError: size must be an integer
+
 7.
     >>> print_square()
     Traceback (most recent call last):
