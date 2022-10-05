@@ -22,7 +22,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([100, 30, 40, 10]), 100)
 
     def max_middle(self):
-        self.assertEqual(max_integer([10, 20 ,30, 15]), 30)
+        self.assertEqual(max_integer([10, 20 ,30, 15, 12]), 30)
 
     def test_int_negative(self):
         self.assertEqual(max_integer([2, 3, -44, 20]), 20)
