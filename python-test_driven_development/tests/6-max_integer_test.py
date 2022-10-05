@@ -18,17 +18,14 @@ class TestMaxInteger(unittest.TestCase):
     def test_int(self):
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
 
-    def test_int_negative(self):
-        self.assertEqual(max_integer([-2, 3, -44, 20]), 20)
-
-    def max_at_the_end(self):
-        self.assertEqual(max_integer([20, 3, 22, 122]), 122)
-
     def max_beginning(self):
         self.assertEqual(max_integer([100, 30, 40, 10]), 100)
 
     def max_middle(self):
         self.assertEqual(max_integer([10, 20 ,30, 15]), 30)
+
+    def test_int_negative(self):
+        self.assertEqual(max_integer([2, 3, -44, 20]), 20)
 
     def max_only_negative(self):
         self.assertEqual(max_integer([-10, -30- -5, -20]), -5)
