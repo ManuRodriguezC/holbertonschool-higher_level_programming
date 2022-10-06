@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+"""Cteated the Rectangle class"""
+
 
 
 class Rectangle:
+    """This class contein the attributes wedth and height"""
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -32,15 +35,18 @@ class Rectangle:
         else:
             self.__height = value
 
+    """This method calculates the area of a rectangle"""
     def area(self):
         return self.__width * self.__height
 
+    """This method calculates the perimeter of a rectangle"""
     def perimeter(self):
         if self.__height == 0 or self.__width == 0:
             return 0
         else:
             return (self.__width * 2) + (self.__height * 2)
 
+    """Method taht print a rectangle"""
     def __str__(self):
         rect = ""
         for i in range(self.__height):
