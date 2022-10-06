@@ -48,10 +48,13 @@ class Rectangle:
 
     """Method taht print a rectangle"""
     def __str__(self):
-        rect = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                rect += "#"
-            if i != (self.__height - 1):
-                rect += "\n"
-        return rect
+        if self.__height == 0 and self.__width == 0:
+            return "\n"
+        else:
+            rect = ""
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    rect += "#"
+                if i != (self.__height - 1):
+                    rect += "\n"
+            return rect
