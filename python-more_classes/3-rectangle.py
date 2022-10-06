@@ -47,9 +47,7 @@ class Rectangle:
 
     """Method taht print a rectangle"""
     def __str__(self):
-        if self.__height == 0 or self.__width == 0:
-            return "\n"
-        else:
+        if self.__height != 0 and self.__width != 0:
             rect = ""
             for i in range(self.__height):
                 for j in range(self.__width):
@@ -57,3 +55,5 @@ class Rectangle:
                 if i != (self.__height - 1):
                     rect += "\n"
             return rect
+        else:
+            return ""
