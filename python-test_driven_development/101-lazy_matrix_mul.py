@@ -5,13 +5,13 @@ import numpy as np
 
 def lazy_matrix_mul(m_a, m_b):
     """ This function check and mul two matrix"""
-    check_int_float_m_a = "m_a should contain only integers or floats"
-    check_int_float_m_b = "m_b should contain only integers or floats"
+    check_int_float_m_a = "invalid data type for einsum"
+    check_int_float_m_b = "invalid data type for einsum"
 
     if type(m_a) != list:
-        raise TypeError("m_a must be a list")
+        raise TypeError("Scalar operands are not allowed, use '*' instead")
     if type(m_b) != list:
-        raise TypeError("m_b must be a list")
+        raise TypeError("Scalar operands are not allowed, use '*' instead")
     if len(m_a) == 0:
         raise ValueError("m_a can't be empty")
     if len(m_b) == 0:
