@@ -1,0 +1,62 @@
+================================
+Test "100-matrix_mul" module
+================================
+
+The test uses for check if can to multiplicate
+two differents matrix.
+
+    >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+Now use it:
+
+1.
+    >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+    [[7, 10], [15, 22]]
+
+2.
+    >>> matrix_mul([[1, "2"], [3, 4]], [[1, 2], [3, 4]])
+    Traceback (most recent call last):
+    ...
+    TypeError: m_a should contain only integers or floats
+
+3.
+    >>> matrix_mul([[1, 2], [3, 4]], [[1, "2"], [3, 4]])
+    Traceback (most recent call last):
+    ...
+    TypeError: m_b should contain only integers or floats
+
+4.
+    >>> matrix_mul([2, [3, 4]], [[1, 2], [3, 4]])
+    Traceback (most recent call last):
+    ...
+    TypeError: m_a must be a list of lists
+
+5.
+    >>> matrix_mul([[1, 2], [3, 4]],[2, [3, 4]])
+    Traceback (most recent call last):
+    ...
+    TypeError: m_b must be a list of lists
+
+6.
+    >>> matrix_mul(1212, [[1, 2], [3, 4]])
+    Traceback (most recent call last):
+    ...
+    TypeError: m_a must be a list
+
+7.
+    >>> matrix_mul([[1, 2], [3, 4]], 345)
+    Traceback (most recent call last):
+    ...
+    TypeError: m_b must be a list
+
+8.
+    >>> matrix_mul([], [[1, 2], [3, 4]])
+    Traceback (most recent call last):
+    ...
+    ValueError: m_a can't be empty
+
+9.
+    >>> matrix_mul([[1, 2], [3, 4]], [])
+    Traceback (most recent call last):
+    ...
+    ValueError: m_b can't be empty
