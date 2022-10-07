@@ -13,7 +13,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def text_module(self):
         test = max_integer.__doc__
-        self.assertTrue(test > 1)
+        self.assertTrue(len(test) > 1)
 
     def test_int(self):
         lists = [1, 2, 3, 4, 5]
