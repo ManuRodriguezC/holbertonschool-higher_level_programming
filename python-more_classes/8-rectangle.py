@@ -2,10 +2,6 @@
 """Cteated the Rectangle class"""
 
 
-from cmath import rect
-from multiprocessing.heap import Arena
-
-
 class Rectangle:
     """Attribut of the class"""
     number_of_instances = 0
