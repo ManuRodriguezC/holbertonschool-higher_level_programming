@@ -19,11 +19,11 @@ class TestMaxInteger(unittest.TestCase):
         lists = [1, 2, 3, 4, 5]
         self.assertEqual(max_integer(lists), 5)
 
-    def max_beginning(self):
+    def test_max_beginning(self):
         lists = [80, 70, 60, 50, 40]
         self.assertEqual(max_integer(lists), 80)
 
-    def max_middle(self):
+    def test_max_middle(self):
         lists = [10, 20, 30, 15, 12]
         self.assertEqual(max_integer(lists), 30)
 
@@ -31,17 +31,20 @@ class TestMaxInteger(unittest.TestCase):
         lists = [2, 3, -44, 20, 10]
         self.assertEqual(max_integer(lists), 20)
 
-    def max_only_negative(self):
+    def test_max_only_negative(self):
         lists = [-10, -30- -5, -20, -23]
         self.assertEqual(max_integer(lists), -5)
 
-    def max_one_element(self):
+    def test_max_one_element(self):
         lists = [4]
         self.assertEqual(max_integer(lists), 4)
 
-    def max_list_empty(self):
+    def tets_max_list_empty(self):
         lists = []
         self.assertIsNone(max_integer(lists))
+
+    def test_no_args(self):
+        self.assertIsNone(max_integer())
 
     def test_node(self):
         with self.assertRaises(TypeError):
