@@ -31,10 +31,6 @@ class TestMaxInteger(unittest.TestCase):
         lists = [2, 3, -44, 20, 10]
         self.assertEqual(max_integer(lists), 20)
 
-    def test_max_only_negative(self):
-        lists = [-10, -30- -5, -20, -23]
-        self.assertEqual(max_integer(lists), -5)
-
     def test_max_one_element(self):
         lists = [4]
         self.assertEqual(max_integer(lists), 4)
