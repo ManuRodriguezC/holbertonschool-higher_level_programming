@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+
+
+"""This class contein all methos and attributes to inheritance"""
 class MyList(list):
+    """This function sort the list in accendent order"""
     def print_sorted(self):
         new = self[:]
         for i in range(len(new) - 1):
