@@ -14,7 +14,6 @@ it uses in:
     >>> len(mod_doc) > 1
     True
 
-
 2.
     >>> issubclass(MyList, list)
     True
@@ -36,6 +35,8 @@ it uses in:
     [1, 4, 2, 3, 5]
 
     >>> new = MyList()
+    >>> new.print_sorted()
+    []
     >>> new.append(-3)
     >>> new.append(-22)
     >>> new.append(1)
