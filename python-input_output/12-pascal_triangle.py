@@ -8,10 +8,10 @@ def pascal_triangle(n):
     pascal triangle with the size n
     """
     list_pascal = []
-    
+
     if n <= 0:
         return list_pascal
-    
+
     temp = []
     value = 0
     for x in range(n):
