@@ -71,3 +71,10 @@ class Rectangle(Base):
             for base in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """This method return the information of the rectangle"""
+        i = self.__id
+        div_x_y = f"{self.__x}/{self.__y}"
+        div_w_h = f"{self.__width}/{self.__height}"
+        return f"[Rectangle] ({i}) {div_x_y} - {div_w_h}"
