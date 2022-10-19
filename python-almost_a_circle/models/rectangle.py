@@ -81,3 +81,19 @@ class Rectangle(Base):
         div_x_y = f"{self.__x}/{self.__y}"
         div_w_h = f"{self.__width}/{self.__height}"
         return f"[Rectangle] ({self.id}) {div_x_y} - {div_w_h}"
+
+    def update(self, *args):
+        """This method assigns an argument to each attibute"""
+        count = 0
+        for arv in args:
+            if count == 0:
+                self.id = arv
+            if count == 1:
+                self.__width = arv
+            if count == 2:
+                self.__height = arv
+            if count == 3:
+                self.__x = arv
+            if count == 4:
+                self.__y = arv
+            count += 1
