@@ -16,7 +16,7 @@ class Base:
 
     @id.setter
     def id(self, value):
-        if value == None:
+        if value is None:
             Base.__nb_objects += 1
             self.__id = Base.__nb_objects
         else:
