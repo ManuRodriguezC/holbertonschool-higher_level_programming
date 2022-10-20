@@ -110,3 +110,7 @@ class Rectangle(Base):
                 if count == 4:
                     self.__y = arv
                 count += 1
+
+    def to_dictionary(self):
+        return {'id': self.id, 'width': self.width, 
+                'height': self.height, 'x': self.x, 'y': self.y}
