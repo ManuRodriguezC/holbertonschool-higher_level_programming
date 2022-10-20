@@ -23,6 +23,9 @@ class Base:
         else:
             self.__id = value
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """This method return the json string of the object"""
+        if list_dictionaries is None:
+            return "[]"
         return json.dumps(list_dictionaries)
