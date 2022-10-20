@@ -112,5 +112,6 @@ class Rectangle(Base):
                 count += 1
 
     def to_dictionary(self):
+        """This method return the dictionary of class"""
         return {'id': self.id, 'width': self.width, 
                 'height': self.height, 'x': self.x, 'y': self.y}
