@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Module: Square"""
-from pyrsistent import v
 from models.rectangle import Rectangle
 
 
