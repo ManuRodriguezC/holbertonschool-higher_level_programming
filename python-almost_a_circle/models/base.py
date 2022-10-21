@@ -40,4 +40,3 @@ class Base:
         filename = cls.__name__ + ".json"
         with open(filename, "w", encoding='utf-8') as fi:
             fi.write(file)
-
