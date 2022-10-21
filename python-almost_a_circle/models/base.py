@@ -52,3 +52,24 @@ class Base:
             return new_list
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """Retrurn a instance with all atributes already set"""
+        new_instance = cls(**dictionary)
+        new_instance.update(**dictionary)
+
+        return new_instance
+
+    @classmethod
+    def load_from_file(cls):
+        """This method returns a list of instances:"""
+        list_instance = []
+        try:
+            with open(f"{cls.__name__}.json", "r", encoding='utf-8') as file:
+                dictionary = cls.from_json_string(file.read())
+                for element in dictionary:
+                    list_instance.append(cls.create(**element))
+                return list_instance
+        except FileNotFoundError:
+            return list_instance
