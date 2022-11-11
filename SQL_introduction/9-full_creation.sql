@@ -3,7 +3,7 @@
 CREATE TABLE IF NOT EXISTS second_table (
     id int,
     name varchar(256),
-    socre int
+    score int
 );
 
 INSERT INTO second_table (id, name, score) VALUES (1, 'John', 10);
