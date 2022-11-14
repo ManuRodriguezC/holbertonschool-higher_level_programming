@@ -2,7 +2,8 @@
 
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
 USE hbtn_0d_usa;
-CREATE TABLE states (
+CREATE TABLE IF NOT EXISTS states (
     id int auto_intrement,
-    name varchar(256) NOT NULL
+    name varchar(256) NOT NULL,
+    PRIMARY KEY(id)
 );
