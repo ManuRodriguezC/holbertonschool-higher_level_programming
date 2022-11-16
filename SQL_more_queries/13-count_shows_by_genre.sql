@@ -3,4 +3,4 @@
 
 SELECT g.name AS genre, count(s.genre_id) AS number_of_shows FROM tv_genres g LEFT JOIN tv_show_genres s ON id = genre_id
 GROUP BY g.name
-ORDER BY number_of-shows DESC;
+ORDER BY count(s.genre_id) DESC;
