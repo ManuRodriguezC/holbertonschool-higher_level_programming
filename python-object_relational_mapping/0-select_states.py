@@ -16,6 +16,7 @@ def date():
 
     cur = db.cursor()
 
+    cur.execute("USE hbtn_0e_0_usa")
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     for elemets in cur:
         print(elemets)
