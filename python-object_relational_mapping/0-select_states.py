@@ -8,8 +8,10 @@ import MySQLdb
 
 def date():
     db = MySQLdb.connect(
-        user='root',
-        password='majo0308',
+        host="localhost",
+        user="root",
+        password="majo0308",
+        database="hbtn_0e_0_usa"
     )
 
     cur = db.cursor()
