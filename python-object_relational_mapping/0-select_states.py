@@ -16,7 +16,7 @@ def date():
 
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states")
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
     for elemets in cur:
         print(elemets)
         
