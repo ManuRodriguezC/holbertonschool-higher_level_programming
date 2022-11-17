@@ -22,7 +22,8 @@ def date():
 
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name = 'Arizona' ORDER BY id ASC")
+    search = "SELECT id, name FROM states WHERE name = '{}' ORDER BY id ASC".format(argv[4])
+    cur.execute(search)
     for elemets in cur:
         print(elemets)
 
