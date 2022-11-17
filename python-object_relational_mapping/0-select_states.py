@@ -22,7 +22,7 @@ def date():
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     for elemets in cur:
         print(elemets)
-    
+
     db.close()
 
 
