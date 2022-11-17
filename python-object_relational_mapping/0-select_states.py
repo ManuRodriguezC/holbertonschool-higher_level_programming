@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-import MySQLdb
-
-
 """
 This module conect to the sql with python,
 open the hbtn databases and print all elemts
 """
+import MySQLdb
+
+
 db = MySQLdb.connect(
     user='root',
     password='majo0308',
