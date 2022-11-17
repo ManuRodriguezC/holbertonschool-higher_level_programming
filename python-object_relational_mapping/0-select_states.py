@@ -19,3 +19,6 @@ def date():
     cur.execute("SELECT * FROM states")
     for elemets in cur:
         print(elemets)
+        
+if __name__ == "__main__":
+    date()
