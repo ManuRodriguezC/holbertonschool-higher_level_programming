@@ -5,18 +5,16 @@ open the hbtn databases and print all elemts
 """
 import MySQLdb
 
-
+"""edded"""
 db = MySQLdb.connect(
     user='root',
     password='majo0308',
-    database='hbtn_0e_0_usa',
+    database='hbtn_0e_0_usa'
 )
-
+# asasas
 cur = db.cursor()
-
-cur.execute("SHOW DATABASES")
-cur.execute("USE hbtn_0e_0_usa")
+#asas
 cur.execute("SELECT * FROM states")
-
+#asas
 for elemets in cur:
     print(elemets)
