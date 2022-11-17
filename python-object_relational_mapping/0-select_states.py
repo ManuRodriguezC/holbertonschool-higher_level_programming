@@ -6,7 +6,8 @@ open the hbtn databases and print all elemts
 import MySQLdb
 
 
-if __name__ == "__main__":
+def date():
+    """This funtion connect to the basedata"""
     db = MySQLdb.connect(
         host="localhost",
         user="root",
@@ -20,3 +21,9 @@ if __name__ == "__main__":
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     for elemets in cur:
         print(elemets)
+    
+    db.close()
+
+
+if __name__ == "__main__":
+    date()
