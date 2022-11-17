@@ -7,16 +7,15 @@ open the hbtn databases and print all elemts
 
 import MySQLdb
 
+def date():   
+    db = MySQLdb.connect(
+        user='root',
+        password='majo0308',
+        database='hbtn_0e_0_usa'
+    )
 
-db = MySQLdb.connect(
-    user='root',
-    password='majo0308',
-    database='hbtn_0e_0_usa'
-)
-# asasas
-cur = db.cursor()
-#asas
-cur.execute("SELECT * FROM states")
-#asas
-for elemets in cur:
-    print(elemets)
+    cur = db.cursor()
+
+    cur.execute("SELECT * FROM states")
+    for elemets in cur:
+        print(elemets)
