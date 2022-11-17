@@ -19,14 +19,12 @@ def date():
         database=argv[3],
         port=3306
     )
-    
+
     cur = db.cursor()
 
     com = "SELECT c.id, c.name, s.name FROM cities c LEFT JOIN \
             states s ON c.state_id = s.id ORDER BY c.id ASC"
-    """
-    com = "SELECT * FROM cities"
-    """
+
     cur.execute(com)
     for elemets in cur:
         print(elemets)
