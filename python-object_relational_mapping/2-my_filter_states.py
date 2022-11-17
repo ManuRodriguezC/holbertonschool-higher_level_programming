@@ -25,7 +25,7 @@ def date():
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     for elemets in cur:
         if argv[4] == elemets[1]:
-            print(elemets)
+            print({}.format(elemets))
 
     db.close()
 
