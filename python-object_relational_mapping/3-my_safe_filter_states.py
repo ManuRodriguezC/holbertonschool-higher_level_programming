@@ -19,13 +19,14 @@ def date():
         database=argv[3],
         port=3306
     )
-    
+
     if ';' in argv[4]:
         return
 
     cur = db.cursor()
 
-    search = "SELECT id, name FROM states WHERE name = '{}' ORDER BY id ASC".format(argv[4])
+    search = "SELECT id, name FROM states WHERE name = '{}' \
+                ORDER BY id ASC".format(argv[4])
     cur.execute(search)
     for elemets in cur:
         print(elemets)
