@@ -4,15 +4,16 @@ This module conect to the sql with python,
 open the hbtn databases and print all elemts
 """
 import MySQLdb
+from sys import argv
 
 
 def date():
     """This funtion connect to the basedata"""
     db = MySQLdb.connect(
         host="localhost",
-        user="root",
-        password="majo0308",
-        database="hbtn_0e_0_usa",
+        user=argv[1],
+        password=argv[2],
+        database=argv[3],
         port=3306
     )
 
