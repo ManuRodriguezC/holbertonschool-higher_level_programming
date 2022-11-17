@@ -3,15 +3,13 @@
 This module conect to the sql with python,
 open the hbtn databases and print all elemts
 """
-
-
 import MySQLdb
 
-def date():   
+
+def date():
     db = MySQLdb.connect(
         user='root',
         password='majo0308',
-        database='hbtn_0e_0_usa'
     )
 
     cur = db.cursor()
@@ -20,6 +18,7 @@ def date():
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     for elemets in cur:
         print(elemets)
-        
+
+
 if __name__ == "__main__":
     date()
