@@ -19,6 +19,9 @@ def date():
         database=argv[3],
         port=3306
     )
+    
+    if ';' in argv[4]:
+        return
 
     cur = db.cursor()
 
