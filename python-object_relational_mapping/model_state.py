@@ -9,6 +9,7 @@ from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
 
+
 class State(Base):
     """This class create a objects for database"""
     __tablename__ = 'states'
