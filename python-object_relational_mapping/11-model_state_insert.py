@@ -12,14 +12,12 @@ def model_state_insert():
         .format(argv[1], argv[2], argv[3])
 
     engine = create_engine(dir, pool_pre_ping=True)
-    Base.metadata.create_all(engine)
-    State.metadata.create_all(engine)
 
     Session = sessionmaker(engine)
     conect = engine.connect()
     session = Session(bind=conect)
 
-    new_state = State(name="Lousiana")
+    new_state = State(name="Louisiana")
     session.add(new_state)
     session.commit()
     print(new_state.id)
