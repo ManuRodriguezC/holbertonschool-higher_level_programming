@@ -22,5 +22,3 @@ def model_state_fetch_first():
 
 if __name__ == '__main__':
     model_state_fetch_first()
-
-    
