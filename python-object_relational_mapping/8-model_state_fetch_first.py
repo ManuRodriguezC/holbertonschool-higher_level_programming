@@ -15,7 +15,8 @@ def model_state_fetch_first():
     engine = create_engine(dir, pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     state = Session().query(State).order_by(State.id).first()
-
+    if state is None:
+        print("Nothing")
     print(f"{state.id}: {state.name}")
 
 
