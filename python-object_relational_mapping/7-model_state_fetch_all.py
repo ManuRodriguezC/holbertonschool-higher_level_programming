@@ -18,7 +18,3 @@ def model_state_fetch_all():
 
     for elemet in states:
         print(f"{elemet.id}: {elemet.name}")
-
-
-if __name__ == '__main__':
-    model_state_fetch_all()
