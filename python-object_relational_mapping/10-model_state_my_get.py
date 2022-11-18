@@ -16,8 +16,9 @@ def model_state_my_get():
 
     engine = create_engine(dir, pool_pre_ping=True)
     Session = sessionmaker(engine)
-    state = Session().query(State).order_by(State.id).filter(State.name == argv[4])
-    
+    state = Session().query(State).order_by(State.id)\
+        .filter(State.name == argv[4])
+
     for elemet in state:
         print(elemet.id)
         return
