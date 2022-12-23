@@ -15,7 +15,9 @@ request(url, function (error, response, date) {
           count += 1;
         }
       }
-      dates[pos] = count;
+      if (count != 0) {
+        dates[pos] = count;
+      }
     }
     console.log(dates);
   }
