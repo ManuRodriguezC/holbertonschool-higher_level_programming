@@ -10,7 +10,8 @@ request(url, 'utf-8', function (error, response, date) {
     const dateObj = JSON.parse(date).results;
     for (let x = 0; x < dateObj.length; x++) {
       for (let i = 0; i < dateObj[x].characters.length; i++) {
-        if (dateObj[x].characters[i] === 'https://swapi-api.hbtn.io/api/people/18/') {
+        const id = dateObj[x].characters[i].split('/')[5]
+        if (id === '18') {
           count++;
         }
       }
